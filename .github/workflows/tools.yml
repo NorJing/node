@@ -1,9 +1,8 @@
 name: "tools update"
 on:
-  schedule:
-    # Run once a week at 00:05 AM UTC on Saturday.
-    - cron: '5 0 * * 6'
-
+#  schedule:
+#    # Run once a week at 00:05 AM UTC on Saturday.
+#    - cron: '5 0 * * 6'
   workflow_dispatch:
 
 jobs:
