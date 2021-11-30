@@ -43,7 +43,7 @@ class Histogram : public MemoryRetainer {
 
   // Iterator is a function type that takes two doubles as argument, one for
   // percentile and one for the value at that percentile.
-  // Test manually running in buildjet
+  // Test manually running in buildjet 4vCPU
   template <typename Iterator>
   inline void Percentiles(Iterator&& fn);
 
