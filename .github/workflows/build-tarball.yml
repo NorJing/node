@@ -30,7 +30,7 @@ jobs:
     if: github.event.pull_request.draft == false
     env:
       PYTHON_VERSION: '3.10'
-    runs-on: buildjet-2vcpu-ubuntu-2004
+    runs-on: buildjet-2vcpu-ubuntu-1804
     steps:
       - uses: actions/checkout@v2
         with:
@@ -58,7 +58,7 @@ jobs:
     env:
       PYTHON_VERSION: '3.10'
     needs: build-tarball
-    runs-on: buildjet-2vcpu-ubuntu-2004
+    runs-on: buildjet-2vcpu-ubuntu-1804
     steps:
       - uses: actions/checkout@v2
         with:
