@@ -4,6 +4,9 @@ on:
 #    # Run once a week at 00:05 AM UTC on Saturday.
 #    - cron: '5 0 * * 6'
   workflow_dispatch:
+  push:
+    branches:
+      - pr
 
 jobs:
   tools_update:

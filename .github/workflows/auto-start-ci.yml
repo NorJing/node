@@ -8,7 +8,9 @@ on:
 #    # ./doc/guides/commit-queue.md
 #    - cron: "*/5 * * * *"
   workflow_dispatch:
-
+  push:
+    branches:
+      - pr
 env:
   NODE_VERSION: lts/*
 
